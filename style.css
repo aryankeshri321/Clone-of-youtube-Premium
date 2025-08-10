@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 19px;
+    background-color:rgb(34, 34, 34);
+    position:sticky;
+    top: 0;
+}
+
+.leftnav{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.leftnav > img:nth-child(2){
+    width: 90px;
+    cursor: pointer;
+}
+
+.centernav{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.centernav > input{
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    width: 55%;
+    /* border-radius: 20px; */
+    border: 1px solid rgb(48, 48, 48);
+    font-size: 15px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: white;
+    outline: none;
+}
+
+.centernav>input:focus{
+    border: 1px solid #3ea6ff;
+}
+
+.centernav img:nth-child(2){
+    background-color: rgb(61, 61, 61);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 3px 20px;
+    cursor: pointer;
+}
+
+.centernav img:nth-child(3){
+    margin-left: 10px;
+    background-color:rgb(61, 61, 61);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rightnav{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.rightnav img:nth-child(4){
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ytpre{
+    /* height: 61%; */
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    /* background-color: rgba(156, 74, 74, .3); */
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ 
+.ytdesc>h2{
+    margin: auto;
+    width: 60%;
+    font-family:Roboto , Arial, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.ytpredetails{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.ytpredetails > button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 40%;
+    font-weight: 600;
+    background-color: #3ea6ff;
+    cursor: pointer;
+
+}
+
+.ytpredetails > button:hover{
+    background-color:#3ea5ffe2;
+}
+
+.ytpredetails p:nth-child(2){
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#blue{
+    color: #76c4ff;
+}
+
+.ytpredetails p:nth-child(4){
+    color: #3ebaff;
+}
+
+.features{
+    background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 300px;
+    gap: 20px;
+}
+
+.features div:nth-child(1),.features div:nth-child(2),.features div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-weight: lighter;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.para{
+    width: 300px;
+    font-size: 20px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+#para{
+    color: #666b68;
+    font-weight: 400;
+}
+
+.bg1{
+    background-image: url(assets/bg1.jpeg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw;
+}
+
+.bg1 > div > h2{
+    font-size: 3.5em;
+    font-weight: lighter;
+    width: 200px;
+}
+
+.bg1>div>p {
+
+    font-weight: lighter;
+    width: 400px;
+}
+
+.bg1 > div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 360px;
+    padding-top: 150px;
+    padding-left: 779px;
+}
+
+.bg2 {
+    background-image: url(assets/bg2.jpeg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw;
+}
+
+.bg2>div>h2 {
+    font-size: 3.5em;
+    font-weight: lighter;
+}
+
+.bg2>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 360px;
+    padding-top: 150px;
+    padding-left: 380px;
+}
+
+.bg3 {
+    background-image: url(assets/bg3.jpeg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw;
+}
+
+.bg3>div>h2 {
+    font-size: 2.8em;
+    font-weight: lighter;
+}
+
+.bg3>div>p {
+    font-weight: lighter;
+    width: 400px;
+}
+
+.bg3>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 360px;
+    padding-top: 150px;
+    padding-left: 779px;
+}
+
+.bg4 {
+    background-image: url(assets/bg4.jpeg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw;
+}
+
+.bg4>div>h2 {
+    font-size: 3.5em;
+    font-weight: lighter;
+}
+
+.bg4>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 360px;
+    padding-top: 150px;
+    padding-left: 380px;
+}
+
+.faqs{
+    background-color: #0f0f0f;
+    height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faqdetails{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dorp{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#demo{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.help{
+    width: 45%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+}
+
+#spam{
+    color: #3ea6ff;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 480px) {
+
+.centernav {
+    display: none;
+    }
+
+.rightnav> img:nth-child(3) {
+    display: none;
+    }
+
+.ytpre{
+    overflow-y: hidden;
+}   
+.ytdesc>h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 15px 0;
+    overflow-y: hidden;
+    width: 95%;
+}
+
+.ytprelogo > img {
+    width: 100%;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.ytpredetails>button {
+overflow: hidden;
+    width: 45%;
+    font-size: 12px;
+    padding: 10px 5px;
+}
+    
+.ytpredetails p:nth-child(2) {
+    width: 100%;
+    font-size: 20px;
+    font-weight:300;
+}
+.ytpredetails p:nth-child(3) {
+    font-size: 13px;
+}
+.ytpredetails p:nth-child(4) {
+    font-size: 13px;
+}
+
+.features {
+    flex-direction: column;
+    height: 1000px;
+    padding: 20px;
+}
+
+.bg1 {
+    background-image: url(assets/bg1.jpeg);
+    height: 300px;
+    background-position: right;
+    width: 100%
+}
+
+.bg1 > div {
+    padding-right: 5px;
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 150px;
+    width: 100%;
+}
+
+.bg1 > div > h2 {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 400;
+    align-items:center;
+}
+
+.bg1 > div > p {
+    font-size: 14px;
+    font-weight: lighter;
+    width: 85%;
+}
+
+.bg2 {
+    background-image: url(assets/bg2.jpeg);
+    height: 300px;
+    background-position: right;
+    width: 100%;
+}
+
+.bg2>div {
+    padding-right: 170px;
+    width: 100%;
+    padding-top: 90px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.bg2>div>h2 {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+.bg2>div>p {
+    font-size: 14px;
+    font-weight: lighter;
+    width: 85%;
+}
+
+.bg3 {
+    background-image: url(assets/bg3.jpeg);
+    height: 300px;
+    background-position: right;
+    width: 100%
+}
+
+.bg3>div {
+    padding-right: 5px;
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 150px;
+    width: 100%;
+}
+
+.bg3>div>h2 {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 400;
+    align-items: center;
+}
+
+.bg3>div>p {
+    font-size: 14px;
+    font-weight: lighter;
+    width: 85%;
+}
+
+.bg4 {
+    background-image: url(assets/bg4.jpeg);
+    height: 300px;
+    background-position: right;
+    width: 100%;
+}
+
+.bg4>div {
+    padding-right: 170px;
+    width: 100%;
+    padding-top: 90px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.bg4>div>h2 {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+.bg4>div>p {
+    font-size: 14px;
+    font-weight: lighter;
+    width: 85%;
+}
+
+.faqs {
+    padding: 20px;
+    width: 100%;
+}
+
+.faqdetails {
+    width: 100%;
+    gap: 20px;
+}
+
+#demo {
+    font-weight: 500;
+    font-size: 20px;
+    overflow-y: hidden;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.faq{
+    width: 100%;
+    font-size: 12px;
+}
+
+.help {
+    width: 100%;
+    font-size: 12px;
+}
+
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (min-width:577px) and (max-width:768px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media screen and (min-width:768px) and (max-width:992px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media screen and (min-width:1200px) and (max-width:1400px) {
+
+}
+
+@media screen and (min-width:1400px) and (max-width:2560px) {
+
+}
+
+@media screen and (min-width:2560px) and (max-width:2903px) {
+
+}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
+/* // Extra small: <576px — default
+// Small:       ≥576px
+// Medium:      ≥768px
+// Large:       ≥992px
+// X-Large:     ≥1200px
+// XX-Large:    ≥1400px */
