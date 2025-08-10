@@ -313,7 +313,7 @@
     color: #3ea6ff;
 }
 
-/* X-Small devices (portrait phones, less than 480px) */
+/* Extra Small Mobile (Portrait): 320px – 480px */
 @media screen and (min-width:320px)and (max-width: 480px) {
 
 .centernav {
@@ -508,7 +508,8 @@ overflow: hidden;
 }
 
 }
-/* // Small devices (landscape phones, less than 600px) */
+
+/* Small Mobile (Landscape): 481px – 600px */
 @media screen and (min-width:481px) and (max-width:600px) {
 .centernav {
         /* display: none; */
@@ -713,7 +714,7 @@ overflow: hidden;
     }
 }
 
-/* // Medium devices (tablets, less than 768px) */
+ /* Small Tablets (Portrait): 601px – 768px */
 @media screen and (min-width:601px) and (max-width:768px) {
      .centernav {
          /* display: none; */
@@ -928,7 +929,7 @@ overflow: hidden;
      }
  }
 
-/* // Large devices (desktops, less than 1200px) */
+/* Large Tablets (Landscape): 769px – 1024px */
 @media screen and (min-width:769px) and (max-width:1024px) {
 
      .rightnav>img:nth-child(1) {
@@ -1137,6 +1138,7 @@ overflow: hidden;
      }
  }
 
+/* Small Desktops and Laptops: 1025px – 1280px */
 @media screen and (min-width:1025px) and (max-width:1280px) {
 
     .rightnav>img:nth-child(1) {
@@ -1189,7 +1191,6 @@ overflow: hidden;
         width: 100%;
     }
 
-
     .para {
         width: 300px;
         font-size: 15px;
@@ -1212,7 +1213,7 @@ overflow: hidden;
     .bg1>div {
         padding-right: 45px;
         width: 100%;
-        padding-top: 150px;
+        padding-top: 170px;
         padding-left: 500px;
         width: 100%;
         gap: 5px;
@@ -1239,9 +1240,9 @@ overflow: hidden;
     }
 
     .bg2>div {
-        padding-right: 400px;
+        padding-right: 500px;
         width: 100%;
-        padding-top: 150px;
+        padding-top: 170px;
         padding-left: 95px;
         width: 100%;
         gap: 5px;
@@ -1269,8 +1270,8 @@ overflow: hidden;
     .bg3>div {
         padding-right: 45px;
         width: 100%;
-        padding-top: 150px;
-        padding-left: 430px;
+        padding-top: 170px;
+        padding-left: 500px;
         width: 100%;
         gap: 5px;
     }
@@ -1296,9 +1297,9 @@ overflow: hidden;
     }
 
     .bg4>div {
-        padding-right: 400px;
+        padding-right: 500px;
         width: 100%;
-        padding-top: 150px;
+        padding-top: 170px;
         padding-left: 95px;
         width: 100%;
         gap: 5px;
@@ -1345,12 +1346,426 @@ overflow: hidden;
     }
 }
 
+/* Large Desktops and High-Resolution Screens: 1281px – 1440px */
+@media screen and (min-width:1281px) and (max-width:1440px) {
 
-/* // XX-Large devices (larger desktops)
-// No media query since the xxl breakpoint has no upper bound on its width */
-/* // Extra small: <576px — default
-// Small:       ≥576px
-// Medium:      ≥768px
-// Large:       ≥992px
-// X-Large:     ≥1200px
-// XX-Large:    ≥1400px */
+    .rightnav>img:nth-child(1) {
+        display: none;
+    }
+
+    .ytpre {
+        overflow-y: hidden;
+    }
+
+    .ytdesc>h2 {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 15px 0;
+        overflow-y: hidden;
+        width: 95%;
+    }
+
+    .ytprelogo>img {
+        width: 100%;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    .ytpredetails>button {
+        overflow: hidden;
+        width: 45%;
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    .ytpredetails p:nth-child(2) {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .ytpredetails p:nth-child(3) {
+        font-size: 13px;
+    }
+
+    .ytpredetails p:nth-child(4) {
+        font-size: 13px;
+    }
+
+    .features {
+        flex-direction: row;
+        height: auto;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .para {
+        width: 300px;
+        font-size: 15px;
+        width: 150px;
+        overflow: hidden;
+    }
+
+    #para {
+        width: 90%;
+    }
+
+
+    .bg1 {
+        background-image: url(assets/bg1.jpeg);
+        height: 450px;
+        background-position: top;
+        width: 100%
+    }
+
+    .bg1>div {
+        padding-right: 45px;
+        width: 100%;
+        padding-top: 200px;
+        padding-left: 650px;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .bg1>div>h2 {
+        /* font-size: 25px; */
+        width: 70%;
+        font-weight: 200;
+        align-items: center;
+    }
+
+    .bg1>div>p {
+        font-size: 16px;
+        font-weight: lighter;
+        width: 70%;
+    }
+
+    .bg2 {
+        background-image: url(assets/bg2.jpeg);
+        height: 450px;
+        background-position: right;
+        width: 100%;
+    }
+
+    .bg2>div {
+        padding-right: 750px;
+        width: 100%;
+        padding-top: 170px;
+        padding-left: 95px;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .bg2>div>h2 {
+        /* font-size: 25px; */
+        width: 100%;
+        font-weight: 200;
+    }
+
+    .bg2>div>p {
+        font-size: 16px;
+        font-weight: lighter;
+        width: 85%;
+    }
+
+    .bg3 {
+        background-image: url(assets/bg3.jpeg);
+        height: 450px;
+        background-position: right;
+        width: 100%
+    }
+
+    .bg3>div {
+        padding-right: 75px;
+        width: 100%;
+        padding-top: 170px;
+        padding-left: 650px;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .bg3>div>h2 {
+        /* font-size: 25px; */
+        width: 100%;
+        font-weight: 200;
+        align-items: center;
+    }
+
+    .bg3>div>p {
+        font-size: 14px;
+        font-weight: lighter;
+        width: 85%;
+    }
+
+    .bg4 {
+        background-image: url(assets/bg4.jpeg);
+        height: 450px;
+        background-position: right;
+        width: 100%;
+    }
+
+    .bg4>div {
+        padding-right: 750px;
+            width: 100%;
+            padding-top: 170px;
+            padding-left: 95px;
+            width: 100%;
+            gap: 5px;
+    }
+
+    .bg4>div>h2 {
+        /* font-size: 25px; */
+        width: 100%;
+        font-weight: 200;
+    }
+
+    .bg4>div>p {
+        font-size: 14px;
+        font-weight: lighter;
+        width: 85%;
+    }
+
+    .faqs {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .faqdetails {
+        width: 60%;
+        gap: 20px;
+    }
+
+    #demo {
+        font-weight: 500;
+        font-size: 20px;
+        overflow-y: hidden;
+        padding: 5px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .faq {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .help {
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
+/* Extra-Large Desktops: 1441px and up */
+@media screen and (min-width:1441px) and (max-width:2560px) {
+
+    .rightnav>img:nth-child(1) {
+        display: none;
+    }
+
+    .ytpre {
+        overflow-y: hidden;
+    }
+
+    .ytdesc>h2 {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 15px 0;
+        overflow-y: hidden;
+        width: 95%;
+    }
+
+    .ytprelogo>img {
+        width: 100%;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    .ytpredetails>button {
+        overflow: hidden;
+        width: 45%;
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    .ytpredetails p:nth-child(2) {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .ytpredetails p:nth-child(3) {
+        font-size: 13px;
+    }
+
+    .ytpredetails p:nth-child(4) {
+        font-size: 13px;
+    }
+
+    .features {
+        flex-direction: row;
+        height: auto;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .para {
+        width: 300px;
+        font-size: 15px;
+        width: 150px;
+        overflow: hidden;
+    }
+
+    #para {
+        width: 90%;
+    }
+
+
+    .bg1 {
+        background-image: url(assets/bg1.jpeg);
+        height: 450px;
+        background-position: top;
+        width: 100%
+    }
+
+    .bg1>div {
+        padding-right: 45px;
+        width: 100%;
+        padding-top: 200px;
+        padding-left: 650px;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .bg1>div>h2 {
+        /* font-size: 25px; */
+        width: 70%;
+        font-weight: 200;
+        align-items: center;
+    }
+
+    .bg1>div>p {
+        font-size: 16px;
+        font-weight: lighter;
+        width: 70%;
+    }
+
+    .bg2 {
+        background-image: url(assets/bg2.jpeg);
+        height: 450px;
+        background-position: right;
+        width: 100%;
+    }
+
+    .bg2>div {
+        padding-right: 750px;
+        width: 100%;
+        padding-top: 170px;
+        padding-left: 95px;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .bg2>div>h2 {
+        /* font-size: 25px; */
+        width: 100%;
+        font-weight: 200;
+    }
+
+    .bg2>div>p {
+        font-size: 16px;
+        font-weight: lighter;
+        width: 85%;
+    }
+
+    .bg3 {
+        background-image: url(assets/bg3.jpeg);
+        height: 450px;
+        background-position: right;
+        width: 100%
+    }
+
+    .bg3>div {
+        padding-right: 75px;
+        width: 100%;
+        padding-top: 170px;
+        padding-left: 650px;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .bg3>div>h2 {
+        /* font-size: 25px; */
+        width: 100%;
+        font-weight: 200;
+        align-items: center;
+    }
+
+    .bg3>div>p {
+        font-size: 14px;
+        font-weight: lighter;
+        width: 85%;
+    }
+
+    .bg4 {
+        background-image: url(assets/bg4.jpeg);
+        height: 450px;
+        background-position: right;
+        width: 100%;
+    }
+
+    .bg4>div {
+        padding-right: 750px;
+        width: 100%;
+        padding-top: 170px;
+        padding-left: 95px;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .bg4>div>h2 {
+        /* font-size: 25px; */
+        width: 100%;
+        font-weight: 200;
+    }
+
+    .bg4>div>p {
+        font-size: 14px;
+        font-weight: lighter;
+        width: 85%;
+    }
+
+    .faqs {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .faqdetails {
+        width: 60%;
+        gap: 20px;
+    }
+
+    #demo {
+        font-weight: 500;
+        font-size: 20px;
+        overflow-y: hidden;
+        padding: 5px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .faq {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .help {
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile (Portrait): 320px – 480px 
+Small Mobile (Landscape): 481px – 600px 
+Small Tablets (Portrait): 601px – 768px 
+Large Tablets (Landscape): 769px – 1024px 
+Small Desktops and Laptops: 1025px – 1280px 
+Large Desktops and High-Resolution Screens: 1281px – 1440px 
+Extra-Large Desktops: 1441px and up */
